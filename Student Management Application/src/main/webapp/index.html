@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Management System</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+       background-image: url(https://cdn.pixabay.com/photo/2020/11/19/08/03/college-5757815_1280.jpg); /* Add your image path here */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+      border: 2px solid #dee2e6; /* Border around buttons */
+      padding: 20px;
+      border-radius: 10px;
+      
+    }
+    .btn-container .btn {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    
+    .btn-add {
+      background-color: #28a745; /* Green */
+      border-color: #28a745;
+    }
+    .btn-update {
+      background-color: #007bff; /* Blue */
+      border-color: #007bff;
+    }
+    .btn-delete {
+      background-color: #dc3545; /* Red */
+      border-color: #dc3545;
+    }
+    h1 {
+      display: inline-block;
+      color:white;
+      font-size: 2em;
+      animation: wave 0.5s infinite linear alternate;
+    }
+    @keyframes wave {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-30px);
+      }
+    }
+    .btn-container .btn {
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-style: oblique;
+   font-variant: small-caps;
+  }
+
+  /* Add the following CSS code to change the button text color on hover */
+  .btn-container .btn:hover {
+    color: #28a745; /* Change this color to your desired hover color */
+  }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="btn-container">
+      <h1 class="mb-4">&#x1F3EB; STUDENT MANAGEMENT SYSTEM &#x1F3EB;</h1>
+      <form action="insert.html" method="post">
+        <button type="submit" class="btn btn-add btn-primary" value="AddStudentData" name="submit">Add Student Data</button>
+      </form>
+  <form action="display.html" method="post">
+    <button type="submit" class="btn btn-delete btn-primary" name="submit" value="DisplayStudentData">DISPLAY Student Data</button>
+</form>
+
+      <form action="update.html" method="post">
+        <button type="submit" class="btn btn-update btn-primary" name="submit">Update Student Data</button>
+      </form>
+
+      <form action="delete.html" method="post">
+        <button type="submit" class="btn btn-delete btn-primary" name="submit">Delete Student Data</button>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Design with Bootstrap</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .custom-width {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+     h2{
+    font-family: fantasy;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5 custom-width">
+    <form action="mvcLink3" method="post">
+    
+      <h2 class="mb-4">STUDENT INFORMATION</h2>
+      <div class="form-group">
+        <label for="email">Enter Email ID</label>
+        <input type="text" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="contact">Enter CONTACT NUMBER</label>
+        <input type="text" class="form-control" id="contact" name="contact">
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <label for="yop">Enter YOP</label>
+          <input type="text" class="form-control" id="yop" name="yop">
+        </div>
+        <div class="col">
+          <label for="totalMarks">Enter TOTAL MARKS</label>
+          <input type="text" class="form-control" id="totalMarks" name="totalMarks">
+        </div>
+      </div>
+      <div class="form-group mt-3">
+        <label for="outmarks">Enter OUT OF MARKS</label>
+        <input type="text" class="form-control" id="outmarks" name="outmarks">
+      </div>
+      <button type="submit" class="btn btn-primary mt-3" name="submit">Add Student Data</button>
+    </form>
+  </div>
+
+</body>
+</html>

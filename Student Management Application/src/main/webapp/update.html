@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Update Student Marks</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    .form-container {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    .container{
+    margin-left: 410px;
+    }
+     h2{
+    font-family: fantasy;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h2 class="text-center mb-4">Update Student Marks</h2>
+      <form action="updateLink" method="post">
+        <div class="form-group">
+          <label for="emailId">Enter Email ID</label>
+          <input type="text" class="form-control" id="emailId" name="emailId" placeholder="Email ID">
+        </div>
+        <div class="form-group">
+          <label for="gainmarks">Enter Updated Marks</label>
+          <input type="text" class="form-control" id="gainmarks" name="gainmarks" placeholder="Updated Marks">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Update</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

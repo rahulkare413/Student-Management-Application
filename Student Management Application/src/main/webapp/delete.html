@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Delete Student Record</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Additional styles can be added here if needed */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    .form-container {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      height: 300px;
+    }
+    	.container{
+    margin-left: 410px;
+    
+    }
+    h2{
+    font-family: fantasy;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-container">
+      <h2 class="text-center mb-4">Delete Student Record</h2>
+      <form action="deleteLink" method="post">
+        <div class="form-group">
+          <label for="deleteEmail">Enter Email ID</label>
+          <input type="text" class="form-control" id="deleteEmail" name="deleteEmail" placeholder="Email ID">
+        </div>
+        <button type="submit" class="btn btn-danger btn-block">Delete</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
